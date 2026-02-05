@@ -19,11 +19,11 @@ thread2 = threading.Thread(target=print_numbers, args=("B",))
 
 # Start the threads
 print("Starting Threads...")
-thread1.start()
+thread1.start() #new thread banake k background m fhek do...main programe ko chalne do
 thread2.start()
 
 # Wait for both threads to finish
-thread1.join()
+thread1.join() #main programe ko roko tab tak ye thread complete nhi hoti
 thread2.join()
 
 print("Both threads completed.")
